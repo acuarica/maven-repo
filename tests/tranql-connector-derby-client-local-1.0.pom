@@ -1,0 +1,107 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>tranql</groupId>
+  <artifactId>tranql-connector-derby-client-local</artifactId>
+  <name>TranQL Client Local Derby Connector</name>
+  <version>1.0</version>
+  <description></description>
+  <url>http://tranql.codehaus.org/</url>
+  <inceptionYear></inceptionYear>
+  <mailingLists>
+    <mailingList>
+      <name>tranql dev</name>
+      <subscribe>mailto:dev-subscribe@tranql.codehaus.org</subscribe>
+      <unsubscribe>mailto:dev-unsubscribe@tranql.codehaus.org</unsubscribe>
+      <archive></archive>
+    </mailingList>
+    <mailingList>
+      <name>tranql users</name>
+      <subscribe>mailto:user-subscribe@tranql.codehaus.org</subscribe>
+      <unsubscribe>mailto:user-unsubscribe@tranql.codehaus.org</unsubscribe>
+      <archive></archive>
+    </mailingList>
+    <mailingList>
+      <name>tranql cvs messages</name>
+      <subscribe>mailto:scm-subscribe@tranql.codehaus.org</subscribe>
+      <unsubscribe>mailto:scm-unsubscribe@tranql.codehaus.org</unsubscribe>
+      <archive></archive>
+    </mailingList>
+  </mailingLists>
+  <developers>
+    <developer>
+      <id>jboynes</id>
+      <name>Jeremy Boynes</name>
+      <email>jboynes@codehaus.org</email>
+      <url></url>
+      <organization></organization>
+      <roles>
+        <role>Founder</role>
+      </roles>
+      <timezone></timezone>
+    </developer>
+    <developer>
+      <id>djencks</id>
+      <name>David Jencks</name>
+      <email>djencks@codehaus.org</email>
+      <url></url>
+      <organization></organization>
+      <roles>
+        <role>Developer</role>
+      </roles>
+      <timezone></timezone>
+    </developer>
+    <developer>
+      <id>hogstrom</id>
+      <name>Matt Hogstrom</name>
+      <email>hogstrom@codehaus.org</email>
+      <url></url>
+      <organization></organization>
+      <roles>
+        <role>Developer</role>
+      </roles>
+      <timezone></timezone>
+    </developer>
+  </developers>
+  <scm>
+    <connection>scm:cvs:pserver:anonymous@cvs.tranql.codehaus.org:/home/projects/tranql/scm:tranql</connection>
+    <developerConnection>scm:cvs:ext:USERNAME_NOT_SET@cvs.tranql.codehaus.org:/home/projects/tranql/scm:tranql</developerConnection>
+    <url>http://cvs.tranql.codehaus.org/viewcvs.cgi/tranql/</url>
+  </scm>
+  <organization>
+    <name>The Codehaus</name>
+    <url>http://codehaus.org</url>
+  </organization>
+  <build>
+    <sourceDirectory>src/java</sourceDirectory>
+    <testSourceDirectory>src/test</testSourceDirectory>
+    <plugins>
+      <plugin>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <configuration>
+          <includes>
+            <include>**/*Test.java</include>
+          </includes>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+  <dependencies>
+    <dependency>
+      <groupId>tranql</groupId>
+      <artifactId>tranql-connector</artifactId>
+      <version></version>
+    </dependency>
+    <dependency>
+      <groupId>tranql</groupId>
+      <artifactId>tranql-connector-derby-common</artifactId>
+      <version>1.0</version>
+    </dependency>
+  </dependencies>
+  <distributionManagement>
+    <site>
+      <id>default</id>
+      <name>Default Site</name>
+      <url>scp://tranql.codehaus.org//www/tranql.codehaus.org</url>
+    </site>
+  </distributionManagement>
+</project>

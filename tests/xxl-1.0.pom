@@ -1,0 +1,30 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>xxl</groupId>
+  <artifactId>xxl</artifactId>
+  <name>xxl</name>
+  <version>1.0</version>
+  <url>http://www.xxl-library.de/</url>
+  <dependencies>
+    <dependency>
+      <groupId>jama</groupId>
+      <artifactId>jama</artifactId>
+      <version>1.0.1</version>
+    </dependency>
+    <dependency>
+      <groupId>colt</groupId>
+      <artifactId>colt</artifactId>
+      <version>1.0.1</version>
+    </dependency>
+    <dependency>
+      <groupId>xstream</groupId>
+      <artifactId>xstream</artifactId>
+      <version>1.0.2</version>
+    </dependency>
+    <dependency>
+      <groupId>trove</groupId>
+      <artifactId>trove</artifactId>
+      <version>1.0.2</version>
+    </dependency>
+  </dependencies>
+</project>
